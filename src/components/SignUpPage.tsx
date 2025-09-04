@@ -221,7 +221,7 @@ export const SignUpPage: React.FC<SignUpPageProps> = ({
                   value={formData.name}
                   onChange={handleInputChange}
                   required
-                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   placeholder="Your full name"
                 />
               </div>
@@ -236,7 +236,7 @@ export const SignUpPage: React.FC<SignUpPageProps> = ({
                   value={formData.email}
                   onChange={handleInputChange}
                   required
-                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   placeholder="your.email@example.com"
                 />
               </div>
@@ -251,7 +251,7 @@ export const SignUpPage: React.FC<SignUpPageProps> = ({
                   value={formData.phone}
                   onChange={handleInputChange}
                   required
-                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   placeholder="+94 76 1098385"
                 />
               </div>
@@ -265,7 +265,7 @@ export const SignUpPage: React.FC<SignUpPageProps> = ({
                   value={formData.district}
                   onChange={handleInputChange}
                   required
-                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                 >
                   <option value="">Select District</option>
                   {sriLankanDistricts.map((district) => (
@@ -286,7 +286,7 @@ export const SignUpPage: React.FC<SignUpPageProps> = ({
                   value={formData.businessName}
                   onChange={handleInputChange}
                   required
-                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   placeholder="Your business name"
                 />
               </div>
@@ -302,7 +302,7 @@ export const SignUpPage: React.FC<SignUpPageProps> = ({
                 value={formData.address}
                 onChange={handleInputChange}
                 required
-                className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                 placeholder="Your complete address"
               />
             </div>
@@ -318,7 +318,7 @@ export const SignUpPage: React.FC<SignUpPageProps> = ({
                   value={formData.password}
                   onChange={handleInputChange}
                   required
-                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   placeholder="Create a password"
                 />
               </div>
@@ -333,7 +333,7 @@ export const SignUpPage: React.FC<SignUpPageProps> = ({
                   value={formData.confirmPassword}
                   onChange={handleInputChange}
                   required
-                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   placeholder="Confirm your password"
                 />
               </div>
@@ -341,7 +341,7 @@ export const SignUpPage: React.FC<SignUpPageProps> = ({
 
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-4 px-6 rounded-xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl"
+              className="w-full bg-gradient-to-r from-charming-yellow-400 to-charming-yellow-500 text-black py-4 px-6 rounded-xl hover:from-charming-yellow-500 hover:to-charming-yellow-600 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl"
             >
               Create Account
             </button>

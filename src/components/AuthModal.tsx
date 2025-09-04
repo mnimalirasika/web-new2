@@ -106,9 +106,9 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
         </button>
 
         <div className="text-center mb-8">
-          <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 p-3 rounded-xl shadow-lg w-16 h-16 mx-auto mb-4">
+          <div className="bg-gradient-to-br from-charming-yellow-400 to-charming-yellow-500 p-3 rounded-xl shadow-lg w-16 h-16 mx-auto mb-4">
             <div className="w-full h-full bg-white rounded-lg flex items-center justify-center">
-              <span className="text-yellow-500 font-bold text-xl">A</span>
+              <span className="text-charming-yellow-500 font-bold text-xl">A</span>
             </div>
           </div>
           <h2 className="text-3xl font-bold text-gray-900 mb-2">
@@ -153,7 +153,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
               onChange={handleInputChange}
               placeholder="Email Address"
               required
-              className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-yellow-500 transition-colors text-gray-900 placeholder-gray-500"
+              className="w-full pl-12 pr-4 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-charming-yellow-500 transition-colors text-gray-900 placeholder-gray-500"
             />
           </div>
 
@@ -181,7 +181,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
               onChange={handleInputChange}
               placeholder="Password"
               required
-              className="w-full pl-12 pr-12 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-yellow-500 transition-colors text-gray-900 placeholder-gray-500"
+              className="w-full pl-12 pr-12 py-4 border-2 border-gray-200 rounded-xl focus:outline-none focus:border-charming-yellow-500 transition-colors text-gray-900 placeholder-gray-500"
             />
             <button
               type="button"
@@ -195,7 +195,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
           <button
             type="submit"
             disabled={isLoading}
-          className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-4 px-4 rounded-xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
+          className="w-full bg-gradient-to-r from-charming-yellow-400 to-charming-yellow-500 text-black py-4 px-4 rounded-xl hover:from-charming-yellow-500 hover:to-charming-yellow-600 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl disabled:opacity-50 disabled:cursor-not-allowed"
           >
             {isLoading ? 'Please wait...' : (isSignUp ? 'Create Account' : 'Sign In')}
           </button>
@@ -206,7 +206,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
             {isSignUp ? 'Already have an account?' : "Don't have an account?"}
             <button
               onClick={() => setIsSignUp(!isSignUp)}
-              className="text-yellow-600 hover:text-yellow-700 ml-2 font-semibold transition-colors"
+              className="text-charming-yellow-600 hover:text-charming-yellow-700 ml-2 font-semibold transition-colors"
             >
               {isSignUp ? 'Sign In' : 'Sign Up'}
             </button>
@@ -215,7 +215,7 @@ export const AuthModal: React.FC<AuthModalProps> = ({ isOpen, onClose, onLogin }
 
         {!isSignUp && (
           <div className="text-center mt-4">
-            <button className="text-yellow-600 hover:text-yellow-700 text-sm font-medium transition-colors">
+            <button className="text-charming-yellow-600 hover:text-charming-yellow-700 text-sm font-medium transition-colors">
               Forgot your password?
             </button>
           </div>

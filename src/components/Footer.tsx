@@ -52,7 +52,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             {/* Company Info */}
             <div className="md:col-span-2">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 p-3 rounded-xl shadow-lg">
+                <div className="bg-gradient-to-br from-charming-yellow-400 to-charming-yellow-500 p-3 rounded-xl shadow-lg">
                   <span className="text-white text-2xl"></span>
                 </div>
                 <div>
@@ -65,16 +65,16 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 and material suppliers. Direct connections, no middleman, negotiate your own terms.
               </p>
               <div className="flex space-x-4">
-                <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center hover:bg-yellow-500 cursor-pointer transition-colors group">
+                <div className="w-12 h-12 bg-charming-yellow-400 rounded-xl flex items-center justify-center hover:bg-charming-yellow-500 cursor-pointer transition-colors group">
                   <span className="text-white font-bold group-hover:scale-110 transition-transform">f</span>
                 </div>
-                <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center hover:bg-yellow-500 cursor-pointer transition-colors group">
+                <div className="w-12 h-12 bg-charming-yellow-400 rounded-xl flex items-center justify-center hover:bg-charming-yellow-500 cursor-pointer transition-colors group">
                   <span className="text-white font-bold group-hover:scale-110 transition-transform">t</span>
                 </div>
-                <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center hover:bg-yellow-500 cursor-pointer transition-colors group">
+                <div className="w-12 h-12 bg-charming-yellow-400 rounded-xl flex items-center justify-center hover:bg-charming-yellow-500 cursor-pointer transition-colors group">
                   <span className="text-white font-bold group-hover:scale-110 transition-transform">in</span>
                 </div>
-                <div className="w-12 h-12 bg-yellow-400 rounded-xl flex items-center justify-center hover:bg-yellow-500 cursor-pointer transition-colors group">
+                <div className="w-12 h-12 bg-charming-yellow-400 rounded-xl flex items-center justify-center hover:bg-charming-yellow-500 cursor-pointer transition-colors group">
                   <span className="text-white font-bold group-hover:scale-110 transition-transform">ig</span>
                 </div>
               </div>
@@ -87,9 +87,9 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                 <li>
                   <button 
                     onClick={() => onNavigate('home')}
-                    className="hover:text-yellow-400 transition-colors flex items-center group"
+                    className="hover:text-charming-yellow-400 transition-colors flex items-center group"
                   >
-                    <span className="w-2 h-2 bg-yellow-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
+                    <span className="w-2 h-2 bg-charming-yellow-400 rounded-full mr-3 group-hover:scale-125 transition-transform"></span>
                     Home
                   </button>
                 </li>
@@ -137,7 +137,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <h4 className="text-lg font-bold mb-6 text-white">Get In Touch</h4>
               <div className="space-y-4 text-gray-300">
                 <div className="flex items-start">
-                  <div className="bg-yellow-400 p-2 rounded-lg mr-4 mt-1">
+                  <div className="bg-charming-yellow-400 p-2 rounded-lg mr-4 mt-1">
                     <span className="text-white text-sm"></span>
                   </div>
                   <div>
@@ -147,7 +147,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-yellow-400 p-2 rounded-lg mr-4 mt-1">
+                  <div className="bg-charming-yellow-400 p-2 rounded-lg mr-4 mt-1">
                     <span className="text-white text-sm"></span>
                   </div>
                   <div>
@@ -157,7 +157,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-yellow-400 p-2 rounded-lg mr-4 mt-1">
+                  <div className="bg-charming-yellow-400 p-2 rounded-lg mr-4 mt-1">
                     <span className="text-white text-sm"></span>
                   </div>
                   <div>
@@ -167,7 +167,7 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <div className="bg-yellow-400 p-2 rounded-lg mr-4 mt-1">
+                  <div className="bg-charming-yellow-400 p-2 rounded-lg mr-4 mt-1">
                     <span className="text-white text-sm"></span>
                   </div>
                   <div>
@@ -190,10 +190,10 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
               <p>&copy; 2025 Auto X Sri Lanka. All rights reserved.</p>
             </div>
             <div className="flex space-x-6 text-gray-400 text-sm">
-              <a href="#" className="hover:text-yellow-400 transition-colors">Privacy Policy</a>
-              <a href="#" className="hover:text-yellow-400 transition-colors">Terms of Service</a>
-              <a href="#" className="hover:text-yellow-400 transition-colors">Cookie Policy</a>
-              <a href="#" className="hover:text-yellow-400 transition-colors">Sitemap</a>
+              <a href="#" className="hover:text-charming-yellow-400 transition-colors">Privacy Policy</a>
+              <a href="#" className="hover:text-charming-yellow-400 transition-colors">Terms of Service</a>
+              <a href="#" className="hover:text-charming-yellow-400 transition-colors">Cookie Policy</a>
+              <a href="#" className="hover:text-charming-yellow-400 transition-colors">Sitemap</a>
             </div>
           </div>
         </div>

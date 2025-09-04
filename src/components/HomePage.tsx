@@ -18,14 +18,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
         
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
           <div className="text-center text-white">
-            <div className="inline-flex items-center bg-yellow-400/20 backdrop-blur-sm text-yellow-300 px-6 py-3 rounded-full text-sm font-medium mb-8">
+            <div className="inline-flex items-center bg-charming-yellow-400/20 backdrop-blur-sm text-charming-yellow-300 px-6 py-3 rounded-full text-sm font-medium mb-8">
               ⭐
               Sri Lanka's Leading Heavy Vehicle & Material Platform
             </div>
             
             <h1 className="text-5xl lg:text-7xl font-bold mb-8 leading-tight">
               Connect. Rent. Supply.
-              <span className="text-yellow-400 block">Build Together.</span>
+              <span className="text-charming-yellow-400 block">Build Together.</span>
             </h1>
             
             <p className="text-xl lg:text-2xl text-blue-100 max-w-4xl mx-auto mb-12 leading-relaxed">
@@ -36,7 +36,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
               <button 
                 onClick={onSignUp}
-                className="group bg-yellow-400 text-black px-10 py-4 rounded-xl text-lg font-bold hover:bg-yellow-500 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center"
+                className="group bg-charming-yellow-400 text-black px-10 py-4 rounded-xl text-lg font-bold hover:bg-charming-yellow-500 transition-all duration-300 shadow-lg hover:shadow-xl flex items-center"
               >
                 Sign Up Now
                 <span className="ml-3 group-hover:translate-x-1 transition-transform">→</span>
@@ -46,19 +46,19 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
             {/* Stats */}
             <div className="grid md:grid-cols-4 gap-8 max-w-4xl mx-auto">
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">500+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-charming-yellow-400 mb-2">500+</div>
                 <div className="text-blue-200">Active Users</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">25</div>
+                <div className="text-3xl lg:text-4xl font-bold text-charming-yellow-400 mb-2">25</div>
                 <div className="text-blue-200">Districts Covered</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">1000+</div>
+                <div className="text-3xl lg:text-4xl font-bold text-charming-yellow-400 mb-2">1000+</div>
                 <div className="text-blue-200">Successful Projects</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl lg:text-4xl font-bold text-yellow-400 mb-2">4.9/5</div>
+                <div className="text-3xl lg:text-4xl font-bold text-charming-yellow-400 mb-2">4.9/5</div>
                 <div className="text-blue-200">User Rating</div>
               </div>
             </div>
@@ -81,14 +81,14 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
           <div className="grid md:grid-cols-3 gap-8">
             <div className="group bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-500 border border-gray-100 hover:border-yellow-200">
               <div className="text-center">
-                <div className="bg-yellow-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
-                  <span className="text-yellow-600 text-2xl">🚚</span>
+                <div className="bg-charming-yellow-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                  <span className="text-charming-yellow-600 text-2xl">🚚</span>
                 </div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">Heavy Vehicle Rental</h3>
                 <p className="text-gray-600 leading-relaxed mb-6">
                   Connect with vehicle owners across Sri Lanka. Rent JCBs, excavators, lorries, tippers, water bowsers and more for your construction projects.
                 </p>
-                <div className="flex items-center text-yellow-600 font-semibold group-hover:text-yellow-700">
+                <div className="flex items-center text-charming-yellow-600 font-semibold group-hover:text-charming-yellow-700">
                   Find Vehicles
                   <span className="ml-2 group-hover:translate-x-2 transition-transform">→</span>
                 </div>
@@ -156,8 +156,8 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                 </div>
                 
                 <div className="flex items-start">
-                  <div className="bg-yellow-100 p-3 rounded-xl mr-4 mt-1">
-                    <span className="text-yellow-600 text-xl"></span>
+                  <div className="bg-charming-yellow-100 p-3 rounded-xl mr-4 mt-1">
+                    <span className="text-charming-yellow-600 text-xl"></span>
                   </div>
                   <div>
                     <h4 className="font-bold text-gray-900 mb-2">24/7 Support</h4>
@@ -187,7 +187,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
               {/* Floating achievement card */}
               <div className="absolute -bottom-8 -left-8 bg-white p-6 rounded-2xl shadow-lg">
                 <div className="flex items-center space-x-4">
-                  <div className="bg-yellow-400 p-3 rounded-xl">
+                  <div className="bg-charming-yellow-400 p-3 rounded-xl">
                     <span className="text-white text-xl">⭐</span>
                   </div>
                   <div>
@@ -280,7 +280,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
                   </div>
                 </div>
 
-                <button className="w-full bg-yellow-500 text-white py-3 px-6 rounded-xl hover:bg-yellow-600 transition-colors font-semibold">
+                <button className="w-full bg-charming-yellow-500 text-white py-3 px-6 rounded-xl hover:bg-charming-yellow-600 transition-colors font-semibold">
                   <span onClick={onSignUp}>Become Vehicle Owner</span>
                 </button>
               </div>
@@ -339,7 +339,7 @@ export const HomePage: React.FC<HomePageProps> = ({ onLogin, onSignUp }) => {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <button 
               onClick={onSignUp}
-              className="bg-yellow-400 text-black px-12 py-4 rounded-xl text-lg font-bold hover:bg-yellow-500 transition-colors shadow-lg"
+              className="bg-charming-yellow-400 text-black px-12 py-4 rounded-xl text-lg font-bold hover:bg-charming-yellow-500 transition-colors shadow-lg"
             >
               Sign Up Now
             </button>

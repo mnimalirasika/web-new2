@@ -128,11 +128,11 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={onHomeNavigate}
             className="flex items-center space-x-3 cursor-pointer group"
           >
-            <div className="bg-gradient-to-br from-yellow-400 to-yellow-500 p-3 rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300">
+            <div className="bg-gradient-to-br from-charming-yellow-400 to-charming-yellow-500 p-3 rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300">
               <span className="text-white text-2xl font-bold">A</span>
             </div>
             <div>
-              <h1 className="text-2xl font-bold text-gray-900 group-hover:text-yellow-600 transition-colors">
+              <h1 className="text-2xl font-bold text-gray-900 group-hover:text-charming-yellow-600 transition-colors">
                 Auto X
               </h1>
               <p className="text-xs text-gray-600 hidden sm:block">Heavy Vehicle & Material Platform</p>
@@ -147,9 +147,9 @@ export const Header: React.FC<HeaderProps> = ({
                 onClick={() => handleNavClick(item.id)}
                 className={`flex items-center space-x-2 px-4 py-2 rounded-lg font-medium transition-all duration-300 ${
                   currentView === item.id
-                    ? 'bg-yellow-100 text-yellow-700 shadow-sm'
-                    : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
-                }`}
+                    ? 'bg-charming-yellow-100 text-charming-yellow-700 shadow-sm'
+                    : 'text-gray-600 hover:text-charming-yellow-600 hover:bg-charming-yellow-50'
+                className="flex items-center space-x-3 bg-gradient-to-r from-charming-yellow-400 to-charming-yellow-500 text-black px-6 py-3 rounded-xl hover:from-charming-yellow-500 hover:to-charming-yellow-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl"
               >
                 <span>{item.label}</span>
               </button>
@@ -185,8 +185,9 @@ export const Header: React.FC<HeaderProps> = ({
                 {showProfileDropdown && (
                   <div className="absolute right-0 mt-2 w-64 bg-white rounded-2xl shadow-2xl border border-gray-200 overflow-hidden z-50">
                     <div className="p-4 border-b border-gray-100 bg-gradient-to-r from-yellow-50 to-yellow-100">
+                    <div className="p-4 border-b border-gray-100 bg-gradient-to-r from-charming-yellow-50 to-charming-yellow-100">
                       <div className="flex items-center space-x-3">
-                        <div className="w-12 h-12 bg-yellow-400 rounded-full flex items-center justify-center">
+                        <div className="w-12 h-12 bg-charming-yellow-400 rounded-full flex items-center justify-center">
                           {user.profileImage ? (
                             <img 
                               src={user.profileImage} 
@@ -232,13 +233,13 @@ export const Header: React.FC<HeaderProps> = ({
               <div className="flex items-center space-x-3">
                 <button
                   onClick={onShowLogin}
-                  className="text-gray-600 hover:text-yellow-600 font-semibold px-4 py-2 rounded-lg hover:bg-yellow-50 transition-all duration-300"
+                  className="text-gray-600 hover:text-charming-yellow-600 font-semibold px-4 py-2 rounded-lg hover:bg-charming-yellow-50 transition-all duration-300"
                 >
                   Sign In
                 </button>
                 <button
                   onClick={onShowSignUp}
-                  className="bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-6 py-3 rounded-xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl flex items-center space-x-2"
+                  className="bg-gradient-to-r from-charming-yellow-400 to-charming-yellow-500 text-black px-6 py-3 rounded-xl hover:from-charming-yellow-500 hover:to-charming-yellow-600 transition-all duration-300 font-semibold shadow-lg hover:shadow-xl flex items-center space-x-2"
                 >
                   <span>Sign Up</span>
                 </button>
@@ -248,7 +249,7 @@ export const Header: React.FC<HeaderProps> = ({
             {/* Mobile Menu Button */}
             <button
               onClick={onMenuClick}
-              className="lg:hidden p-2 rounded-lg text-gray-600 hover:text-yellow-600 hover:bg-yellow-50 transition-all duration-300"
+              className="lg:hidden p-2 rounded-lg text-gray-600 hover:text-charming-yellow-600 hover:bg-charming-yellow-50 transition-all duration-300"
             >
               {isMenuOpen ? '✕' : '☰'}
             </button>
@@ -268,8 +269,8 @@ export const Header: React.FC<HeaderProps> = ({
                   }}
                   className={`w-full flex items-center space-x-3 px-4 py-3 rounded-xl font-medium transition-all duration-300 ${
                     currentView === item.id
-                      ? 'bg-yellow-100 text-yellow-700'
-                      : 'text-gray-600 hover:text-yellow-600 hover:bg-yellow-50'
+                      ? 'bg-charming-yellow-100 text-charming-yellow-700'
+                      : 'text-gray-600 hover:text-charming-yellow-600 hover:bg-charming-yellow-50'
                   }`}
                 >
                   <span>{item.label}</span>
@@ -283,7 +284,7 @@ export const Header: React.FC<HeaderProps> = ({
                       onShowLogin();
                       onMenuClick();
                     }}
-                    className="w-full text-left px-4 py-3 text-gray-600 hover:text-yellow-600 hover:bg-yellow-50 rounded-xl transition-all duration-300 font-medium"
+                    className="w-full text-left px-4 py-3 text-gray-600 hover:text-charming-yellow-600 hover:bg-charming-yellow-50 rounded-xl transition-all duration-300 font-medium"
                   >
                     Sign In
                   </button>
@@ -292,9 +293,9 @@ export const Header: React.FC<HeaderProps> = ({
                       onShowSignUp();
                       onMenuClick();
                     }}
-                    className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black px-4 py-3 rounded-xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 font-semibold flex items-center space-x-2"
+                    className="w-full bg-gradient-to-r from-charming-yellow-400 to-charming-yellow-500 text-black px-4 py-3 rounded-xl hover:from-charming-yellow-500 hover:to-charming-yellow-600 transition-all duration-300 font-semibold flex items-center space-x-2"
                   >
-                    <span>Sign Up</span>
+                    <span className="text-charming-yellow-600 text-sm font-bold">U</span>
                   </button>
                 </div>
               )}

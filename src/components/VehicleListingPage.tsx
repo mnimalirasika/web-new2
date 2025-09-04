@@ -25,7 +25,7 @@ export const VehicleListingPage: React.FC<VehicleListingPageProps> = ({ onBack, 
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Header */}
-      <section className="bg-gradient-to-r from-yellow-400 to-yellow-500 py-16">
+      <section className="bg-gradient-to-r from-charming-yellow-400 to-charming-yellow-500 py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <button
             onClick={onBack}
@@ -103,7 +103,7 @@ export const VehicleListingPage: React.FC<VehicleListingPageProps> = ({ onBack, 
                 <select
                   value={selectedDistrict}
                   onChange={(e) => setSelectedDistrict(e.target.value)}
-                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                 >
                   <option value="">All Districts</option>
                   {sriLankanDistricts.map((district) => (
@@ -117,7 +117,7 @@ export const VehicleListingPage: React.FC<VehicleListingPageProps> = ({ onBack, 
                 <select
                   value={selectedCategory}
                   onChange={(e) => setSelectedCategory(e.target.value)}
-                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                 >
                   <option value="">All Vehicle Types</option>
                   {availableCategories.map((category) => (
@@ -180,16 +180,16 @@ export const VehicleListingPage: React.FC<VehicleListingPageProps> = ({ onBack, 
                     </div>
                   </div>
                   
-                  <div className="bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-xl p-4 mb-4">
+                  <div className="bg-gradient-to-r from-charming-yellow-50 to-charming-yellow-100 rounded-xl p-4 mb-4">
                     <div className="grid grid-cols-2 gap-4">
                       <div className="text-center">
-                        <div className="text-lg font-bold text-yellow-600">
+                        <div className="text-lg font-bold text-charming-yellow-600">
                           Rs. {vehicle.pricePerHour.toLocaleString()}
                         </div>
                         <div className="text-xs text-gray-600">per hour</div>
                       </div>
                       <div className="text-center">
-                        <div className="text-lg font-bold text-yellow-600">
+                        <div className="text-lg font-bold text-charming-yellow-600">
                           Rs. {vehicle.pricePerDay.toLocaleString()}
                         </div>
                         <div className="text-xs text-gray-600">per day</div>
@@ -199,7 +199,7 @@ export const VehicleListingPage: React.FC<VehicleListingPageProps> = ({ onBack, 
 
                   <button
                     onClick={() => onVehicleSelect(vehicle)}
-                    className="w-full flex items-center justify-center bg-yellow-400 text-black py-3 px-4 rounded-xl hover:bg-yellow-500 transition-colors font-semibold"
+                    className="w-full flex items-center justify-center bg-charming-yellow-400 text-black py-3 px-4 rounded-xl hover:bg-charming-yellow-500 transition-colors font-semibold"
                   >
                     <Eye className="w-4 h-4 mr-2" />
                     View Details

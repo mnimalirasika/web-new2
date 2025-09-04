@@ -47,7 +47,7 @@ export const ServiceDashboard: React.FC<ServiceDashboardProps> = ({
       case 'consumer':
         return 'from-blue-600 to-blue-700';
       case 'vehicle_owner':
-        return 'from-yellow-400 to-yellow-500';
+        return 'from-charming-yellow-400 to-charming-yellow-500';
       case 'material_supplier':
         return 'from-green-500 to-green-600';
       case 'admin':
@@ -267,7 +267,7 @@ export const ServiceDashboard: React.FC<ServiceDashboardProps> = ({
           <div className="grid md:grid-cols-4 gap-8 text-center">
             <div>
               <div className={`text-3xl font-bold mb-2 ${
-                user.role === 'vehicle_owner' ? 'text-yellow-600' : 
+                user.role === 'vehicle_owner' ? 'text-charming-yellow-600' : 
                 user.role === 'material_supplier' ? 'text-green-600' : 'text-blue-600'
               }`}>500+</div>
               <div className="text-gray-600">
@@ -276,14 +276,14 @@ export const ServiceDashboard: React.FC<ServiceDashboardProps> = ({
             </div>
             <div>
               <div className={`text-3xl font-bold mb-2 ${
-                user.role === 'vehicle_owner' ? 'text-yellow-600' : 
-                user.role === 'material_supplier' ? 'text-green-600' : 'text-yellow-600'
+                user.role === 'vehicle_owner' ? 'text-charming-yellow-600' : 
+                user.role === 'material_supplier' ? 'text-green-600' : 'text-charming-yellow-600'
               }`}>25</div>
               <div className="text-gray-600">Districts Covered</div>
             </div>
             <div>
               <div className={`text-3xl font-bold mb-2 ${
-                user.role === 'vehicle_owner' ? 'text-yellow-600' : 
+                user.role === 'vehicle_owner' ? 'text-charming-yellow-600' : 
                 user.role === 'material_supplier' ? 'text-green-600' : 'text-green-600'
               }`}>1000+</div>
               <div className="text-gray-600">
@@ -292,7 +292,7 @@ export const ServiceDashboard: React.FC<ServiceDashboardProps> = ({
             </div>
             <div>
               <div className={`text-3xl font-bold mb-2 ${
-                user.role === 'vehicle_owner' ? 'text-yellow-600' : 
+                user.role === 'vehicle_owner' ? 'text-charming-yellow-600' : 
                 user.role === 'material_supplier' ? 'text-green-600' : 'text-purple-600'
               }`}>4.9/5</div>
               <div className="text-gray-600">
