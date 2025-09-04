@@ -317,7 +317,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                 onClick={() => setActiveTab(tab.id as any)}
                 className={`py-4 px-2 border-b-2 font-medium text-sm transition-colors relative ${
                   activeTab === tab.id
-                    ? 'border-yellow-500 text-yellow-600'
+                    ? 'border-charming-yellow-500 text-charming-yellow-600'
                     : 'border-transparent text-gray-500 hover:text-gray-700 hover:border-gray-300'
                 }`}
               >
@@ -334,7 +334,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
       </div>
 
       {/* Header Section */}
-      <section className={`bg-gradient-to-r ${partner.type === 'vehicle_owner' ? 'from-yellow-400 to-yellow-500' : 'from-green-500 to-green-600'} py-16`}>
+      <section className={`bg-gradient-to-r ${partner.type === 'vehicle_owner' ? 'from-charming-yellow-400 to-charming-yellow-500' : 'from-green-500 to-green-600'} py-16`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
             <h1 className="text-5xl font-bold mb-4">
@@ -377,7 +377,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                 </h2>
                 <button
                   onClick={() => setShowAddForm(true)}
-                  className={`flex items-center space-x-2 ${partner.type === 'vehicle_owner' ? 'bg-yellow-400 text-black' : 'bg-green-500 text-white'} px-6 py-3 rounded-xl hover:opacity-90 transition-colors font-semibold shadow-lg`}
+                  className={`flex items-center space-x-2 ${partner.type === 'vehicle_owner' ? 'bg-charming-yellow-400 text-black' : 'bg-green-500 text-white'} px-6 py-3 rounded-xl hover:opacity-90 transition-colors font-semibold shadow-lg`}
                 >
                   <span>Add New {partner.type === 'vehicle_owner' ? 'Vehicle' : 'Material'}</span>
                 </button>
@@ -472,7 +472,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                   <p className="text-gray-600 mb-8">Start by adding your first {getItemType()} to attract customers</p>
                   <button
                     onClick={() => setShowAddForm(true)}
-                    className={`${partner.type === 'vehicle_owner' ? 'bg-yellow-400 text-black' : 'bg-green-500 text-white'} px-8 py-4 rounded-xl hover:opacity-90 transition-colors font-semibold text-lg`}
+                    className={`${partner.type === 'vehicle_owner' ? 'bg-charming-yellow-400 text-black' : 'bg-green-500 text-white'} px-8 py-4 rounded-xl hover:opacity-90 transition-colors font-semibold text-lg`}
                   >
                     Add Your First {partner.type === 'vehicle_owner' ? 'Vehicle' : 'Material'}
                   </button>
@@ -618,7 +618,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                     value={formData.type}
                     onChange={handleInputChange}
                     required
-                    className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                    className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   >
                     <option value="">Select {getItemType().charAt(0).toUpperCase() + getItemType().slice(1)} Type</option>
                     {getItemTypes().map((type) => (
@@ -638,7 +638,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                     onChange={handleInputChange}
                     required
                     placeholder={partner.type === 'vehicle_owner' ? 'e.g., TATA 1613, JCB 3CX' : 'e.g., Premium Grade, Fine Quality'}
-                    className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                    className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   />
                 </div>
 
@@ -652,7 +652,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                     value={formData.registrationNumber}
                     onChange={handleInputChange}
                     placeholder={partner.type === 'vehicle_owner' ? 'e.g., WP CAB-1234' : 'e.g., Local Quarry, Imported'}
-                    className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                    className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   />
                 </div>
 
@@ -663,7 +663,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                       name="available"
                       checked={formData.available}
                       onChange={handleInputChange}
-                      className="mr-3 w-4 h-4 text-blue-600 border-gray-300 rounded focus:ring-blue-500"
+                      className="mr-3 w-4 h-4 text-charming-yellow-600 border-gray-300 rounded focus:ring-charming-yellow-500"
                     />
                     <span className="text-sm font-semibold text-gray-700">{partner.type === 'vehicle_owner' ? 'Vehicle Available for Rent' : 'Material Available for Sale'}</span>
                   </label>
@@ -679,7 +679,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                   required
                   rows={4}
                   placeholder={`Describe your ${partner.type === 'vehicle_owner' ? 'vehicle, its condition, and any special features' : 'material, its quality, and any special characteristics'}...`}
-                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                  className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors resize-none"
                 />
               </div>
 
@@ -698,7 +698,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                     min="0"
                     step="100"
                     placeholder="25000"
-                    className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                    className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   />
                 </div>
 
@@ -715,7 +715,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                     min="0"
                     step={partner.type === 'vehicle_owner' ? '1000' : '1'}
                     placeholder={partner.type === 'vehicle_owner' ? '180000' : '10'}
-                    className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                    className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                   />
                 </div>
               </div>
@@ -731,7 +731,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                       value={newSpecification}
                       onChange={(e) => setNewSpecification(e.target.value)}
                       placeholder="e.g., Operating Weight: 8.5 tons"
-                      className="flex-1 border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                      className="flex-1 border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                     />
                     <button
                       type="button"
@@ -823,7 +823,7 @@ export const VehicleManagementPage: React.FC<VehicleManagementPageProps> = ({
                 </button>
                 <button
                   type="submit"
-                  className={`flex-1 ${partner.type === 'vehicle_owner' ? 'bg-yellow-400 text-black' : 'bg-green-500 text-white'} py-3 px-6 rounded-xl hover:opacity-90 transition-colors font-semibold shadow-lg flex items-center justify-center`}
+                  className={`flex-1 ${partner.type === 'vehicle_owner' ? 'bg-charming-yellow-400 text-black' : 'bg-green-500 text-white'} py-3 px-6 rounded-xl hover:opacity-90 transition-colors font-semibold shadow-lg flex items-center justify-center`}
                 >
                   <Save className="mr-2 w-5 h-5" />
                   {editingVehicle ? `Update ${getItemType().charAt(0).toUpperCase() + getItemType().slice(1)}` : `Add ${getItemType().charAt(0).toUpperCase() + getItemType().slice(1)}`}

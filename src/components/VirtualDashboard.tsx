@@ -101,7 +101,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className={`bg-gradient-to-r ${partner.type === 'vehicle_owner' ? 'from-yellow-400 to-yellow-500' : 'from-green-500 to-green-600'} py-16 relative overflow-hidden`}>
+      <section className={`bg-gradient-to-r ${partner.type === 'vehicle_owner' ? 'from-charming-yellow-400 to-charming-yellow-500' : 'from-green-500 to-green-600'} py-16 relative overflow-hidden`}>
         <div className="absolute inset-0">
           <div className="absolute top-10 left-10 w-32 h-32 bg-white/10 rounded-full blur-xl"></div>
           <div className="absolute bottom-20 right-20 w-48 h-48 bg-white/10 rounded-full blur-xl"></div>
@@ -170,7 +170,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                   {!partner.hasEditedProfile && (
                     <button
                       onClick={() => setIsEditingProfile(true)}
-                      className={`flex items-center space-x-2 ${partner.type === 'vehicle_owner' ? 'bg-yellow-400 text-black' : 'bg-green-500 text-white'} px-4 py-2 rounded-xl hover:opacity-90 transition-colors font-semibold`}
+                      className={`flex items-center space-x-2 ${partner.type === 'vehicle_owner' ? 'bg-charming-yellow-400 text-black' : 'bg-green-500 text-white'} px-4 py-2 rounded-xl hover:opacity-90 transition-colors font-semibold`}
                     >
                       <Edit size={16} />
                       <span>Edit Profile</span>
@@ -187,7 +187,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                           type="text"
                           value={profileData.businessName}
                           onChange={(e) => setProfileData({...profileData, businessName: e.target.value})}
-                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                         />
                       </div>
                       <div>
@@ -196,7 +196,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                           type="text"
                           value={profileData.ownerName}
                           onChange={(e) => setProfileData({...profileData, ownerName: e.target.value})}
-                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                         />
                       </div>
                       <div>
@@ -205,7 +205,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                           type="email"
                           value={profileData.email}
                           onChange={(e) => setProfileData({...profileData, email: e.target.value})}
-                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                         />
                       </div>
                       <div>
@@ -214,7 +214,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                           type="tel"
                           value={profileData.phone}
                           onChange={(e) => setProfileData({...profileData, phone: e.target.value})}
-                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                         />
                       </div>
                     </div>
@@ -224,7 +224,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                         type="text"
                         value={profileData.address}
                         onChange={(e) => setProfileData({...profileData, address: e.target.value})}
-                        className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                        className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                       />
                     </div>
                     <div>
@@ -233,7 +233,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                         value={profileData.description}
                         onChange={(e) => setProfileData({...profileData, description: e.target.value})}
                         rows={4}
-                        className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                        className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors resize-none"
                       />
                     </div>
                     <div className="flex space-x-4">
@@ -321,7 +321,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                         <select
                           value={vehicleData.type}
                           onChange={(e) => setVehicleData({...vehicleData, type: e.target.value})}
-                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                         >
                           <option value="">Select Type</option>
                           {(partner.type === 'vehicle_owner' ? vehicleTypes : materialTypes).map((type) => (
@@ -338,7 +338,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                           value={vehicleData.plateNumber}
                           onChange={(e) => setVehicleData({...vehicleData, plateNumber: e.target.value})}
                           placeholder={partner.type === 'vehicle_owner' ? 'e.g., WP CAB-1234' : 'e.g., Premium Grade'}
-                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                         />
                       </div>
                       <div>
@@ -350,7 +350,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                           value={vehicleData.model}
                           onChange={(e) => setVehicleData({...vehicleData, model: e.target.value})}
                           placeholder={partner.type === 'vehicle_owner' ? 'e.g., TATA 1613' : 'e.g., Fine Grade'}
-                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors"
+                          className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                         />
                       </div>
                     </div>
@@ -361,7 +361,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                         onChange={(e) => setVehicleData({...vehicleData, description: e.target.value})}
                         rows={4}
                         placeholder={`Describe your ${partner.type === 'vehicle_owner' ? 'vehicle' : 'material'}...`}
-                        className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-blue-500 transition-colors resize-none"
+                        className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors resize-none"
                       />
                     </div>
                     <div className="flex space-x-4">
@@ -513,7 +513,7 @@ export const VirtualDashboard: React.FC<VirtualDashboardProps> = ({
                   
                   <button
                     onClick={() => window.location.href = '#vehicle-management'}
-                    className={`w-full flex items-center justify-center space-x-2 ${partner.type === 'vehicle_owner' ? 'bg-yellow-400 text-black' : 'bg-green-500 text-white'} py-3 px-4 rounded-xl hover:opacity-90 transition-colors font-semibold`}
+                    className={`w-full flex items-center justify-center space-x-2 ${partner.type === 'vehicle_owner' ? 'bg-charming-yellow-400 text-black' : 'bg-green-500 text-white'} py-3 px-4 rounded-xl hover:opacity-90 transition-colors font-semibold`}
                   >
                     {partner.type === 'vehicle_owner' ? <Truck size={20} /> : <Package size={20} />}
                     <span>Manage {partner.type === 'vehicle_owner' ? 'Vehicles' : 'Materials'}</span>
