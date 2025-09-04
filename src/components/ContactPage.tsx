@@ -37,7 +37,7 @@ export const ContactPage: React.FC = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-br from-yellow-400 via-yellow-500 to-yellow-600 py-20">
+      <section className="bg-gradient-to-br from-charming-yellow-400 via-charming-yellow-500 to-charming-yellow-600 py-20">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center text-white">
             <h1 className="text-5xl lg:text-6xl font-bold mb-6">
@@ -153,7 +153,7 @@ export const ContactPage: React.FC = () => {
                       onChange={handleInputChange}
                       required
                       placeholder="Your full name"
-                      className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                      className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                     />
                   </div>
                   <div>
@@ -246,7 +246,7 @@ export const ContactPage: React.FC = () => {
 
                 <button
                   type="submit"
-                  className="w-full bg-gradient-to-r from-yellow-400 to-yellow-500 text-black py-4 px-6 rounded-xl hover:from-yellow-500 hover:to-yellow-600 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl flex items-center justify-center"
+                  className="w-full bg-gradient-to-r from-charming-yellow-400 to-charming-yellow-500 text-black py-4 px-6 rounded-xl hover:from-charming-yellow-500 hover:to-charming-yellow-600 transition-all duration-300 font-semibold text-lg shadow-lg hover:shadow-xl flex items-center justify-center"
                 >
                   <Send size={20} className="mr-2" />
                   Send Message
@@ -271,8 +271,8 @@ export const ContactPage: React.FC = () => {
           {/* Location Cards */}
           <div className="grid md:grid-cols-3 gap-8 mt-12">
             <div className="bg-gray-50 rounded-2xl p-8 text-center hover:shadow-lg transition-shadow">
-              <div className="bg-yellow-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
-                <MapPin className="text-yellow-600 w-8 h-8" />
+              <div className="bg-charming-yellow-100 w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6">
+                <MapPin className="text-charming-yellow-600 w-8 h-8" />
               </div>
               <h3 className="text-xl font-bold text-gray-900 mb-4">Main Warehouse</h3>
               <p className="text-gray-600 mb-2">No. 245, Lakeview Avenue</p>
@@ -283,7 +283,7 @@ export const ContactPage: React.FC = () => {
                   const url = `https://www.google.com/maps/dir/?api=1&destination=6.8649,79.8997`;
                   window.open(url, '_blank');
                 }}
-                className="bg-yellow-400 text-black px-4 py-2 rounded-lg hover:bg-yellow-500 transition-colors text-sm font-semibold"
+                className="bg-charming-yellow-400 text-black px-4 py-2 rounded-lg hover:bg-charming-yellow-500 transition-colors text-sm font-semibold"
               >
                 Get Directions
               </button>

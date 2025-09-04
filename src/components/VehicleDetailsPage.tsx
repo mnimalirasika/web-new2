@@ -118,6 +118,7 @@ export const VehicleDetailsPage: React.FC<VehicleDetailsPageProps> = ({ vehicle,
   return (
     <div className="min-h-screen bg-gray-50">
       <section className="bg-gradient-to-r from-yellow-400 to-yellow-500 py-12">
+      <section className="bg-gradient-to-r from-charming-yellow-400 to-charming-yellow-500 py-12">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <button
             onClick={onBack}
@@ -160,8 +161,9 @@ export const VehicleDetailsPage: React.FC<VehicleDetailsPageProps> = ({ vehicle,
 
                 <div className="grid grid-cols-2 gap-4">
                   <div className="bg-yellow-50 rounded-xl p-4">
+                  <div className="bg-charming-yellow-50 rounded-xl p-4">
                     <div className="text-sm text-gray-600">Hourly Rate</div>
-                    <div className="text-2xl font-bold text-yellow-600">Rs. {vehicle.pricePerHour.toLocaleString()}</div>
+                    <div className="text-2xl font-bold text-charming-yellow-600">Rs. {vehicle.pricePerHour.toLocaleString()}</div>
                   </div>
                   <div className="bg-green-50 rounded-xl p-4">
                     <div className="text-sm text-gray-600">Daily Rate</div>
@@ -176,15 +178,17 @@ export const VehicleDetailsPage: React.FC<VehicleDetailsPageProps> = ({ vehicle,
                 <div className="flex items-center justify-between mb-6">
                   <h2 className="text-2xl font-bold text-gray-900">Vehicle Owner</h2>
                   <div className="flex items-center bg-yellow-100 px-3 py-1 rounded-full">
-                    <Star className="w-4 h-4 text-yellow-500 fill-current mr-1" />
-                    <span className="font-semibold text-yellow-700">{vehicle.supplier.rating}</span>
+                  <div className="flex items-center bg-charming-yellow-100 px-3 py-1 rounded-full">
+                    <Star className="w-4 h-4 text-charming-yellow-500 fill-current mr-1" />
+                    <span className="font-semibold text-charming-yellow-700">{vehicle.supplier.rating}</span>
                   </div>
                 </div>
 
                 <div className="space-y-4">
                   <div className="flex items-center">
                     <div className="bg-yellow-100 p-2 rounded-lg mr-4">
-                      <User className="w-5 h-5 text-yellow-600" />
+                    <div className="bg-charming-yellow-100 p-2 rounded-lg mr-4">
+                      <User className="w-5 h-5 text-charming-yellow-600" />
                     </div>
                     <div>
                       <div className="font-semibold text-gray-900">{vehicle.supplier.name}</div>

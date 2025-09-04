@@ -263,7 +263,7 @@ export const MaterialListingPage: React.FC<MaterialListingPageProps> = ({ onBack
             </div>
 
             {/* Add Comment Form */}
-            <div className="mb-8 p-6 bg-gradient-to-r from-yellow-50 to-yellow-100 rounded-2xl border border-yellow-200">
+            <div className="mb-8 p-6 bg-gradient-to-r from-charming-yellow-50 to-charming-yellow-100 rounded-2xl border border-yellow-200">
               <h4 className="text-xl font-bold text-gray-900 mb-4">Share Your Experience</h4>
               <form onSubmit={handleSubmitComment} className="space-y-4">
                 <div className="grid md:grid-cols-2 gap-4">
@@ -275,7 +275,7 @@ export const MaterialListingPage: React.FC<MaterialListingPageProps> = ({ onBack
                       onChange={(e) => setNewComment(prev => ({ ...prev, customerName: e.target.value }))}
                       placeholder="Enter your name"
                       required
-                      className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-yellow-500 transition-colors"
+                      className="w-full border-2 border-gray-200 rounded-xl px-4 py-3 focus:outline-none focus:border-charming-yellow-500 transition-colors"
                     />
                   </div>
                   <div>
@@ -302,7 +302,7 @@ export const MaterialListingPage: React.FC<MaterialListingPageProps> = ({ onBack
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="flex items-center space-x-2 bg-yellow-500 text-white px-6 py-3 rounded-xl hover:bg-yellow-600 transition-colors font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="flex items-center space-x-2 bg-charming-yellow-500 text-white px-6 py-3 rounded-xl hover:bg-charming-yellow-600 transition-colors font-semibold disabled:opacity-50 disabled:cursor-not-allowed"
                 >
                   <Send className="w-4 h-4" />
                   <span>{isSubmitting ? 'Submitting...' : 'Submit Review'}</span>
@@ -512,9 +512,9 @@ export const MaterialListingPage: React.FC<MaterialListingPageProps> = ({ onBack
                     </div>
                   </div>
                   
-                  <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-xl p-4 mb-4">
+                  <div className="bg-gradient-to-r from-charming-yellow-50 to-charming-yellow-100 rounded-xl p-4 mb-4">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-blue-600">
+                      <div className="text-2xl font-bold text-charming-yellow-600">
                         Rs. {item.pricePerUnit.toLocaleString()}
                       </div>
                       <div className="text-sm text-gray-600">per {item.unit}</div>
@@ -522,13 +522,12 @@ export const MaterialListingPage: React.FC<MaterialListingPageProps> = ({ onBack
                   </div>
 
                   <button
-                    onClick={() => setSelectedMaterial(item)}
-                    className="w-full flex items-center justify-center bg-blue-500 text-white py-3 px-4 rounded-xl hover:bg-blue-600 transition-colors font-semibold"
                     onClick={() => {
                       setSelectedMaterial(item);
                       // Scroll to top when viewing material details
                       window.scrollTo({ top: 0, behavior: 'smooth' });
                     }}
+                    className="w-full flex items-center justify-center bg-blue-500 text-white py-3 px-4 rounded-xl hover:bg-blue-600 transition-colors font-semibold"
                   >
                     <Eye className="w-4 h-4 mr-2" />
                     View Details

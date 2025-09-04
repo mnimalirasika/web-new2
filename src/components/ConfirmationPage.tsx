@@ -38,7 +38,7 @@ export const ConfirmationPage: React.FC<ConfirmationPageProps> = ({ onAction, re
       case 'consumer':
         return 'from-blue-500 to-blue-600';
       case 'vehicle_owner':
-        return 'from-yellow-400 to-yellow-500';
+        return 'from-charming-yellow-400 to-charming-yellow-500';
       case 'material_supplier':
         return 'from-green-500 to-green-600';
       default:
@@ -127,8 +127,8 @@ export const ConfirmationPage: React.FC<ConfirmationPageProps> = ({ onAction, re
                 {isBusinessUser && (
                   <>
                     <div className="text-center">
-                      <div className="bg-yellow-100 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3">
-                        <CheckCircle className="w-6 h-6 text-yellow-600" />
+                      <div className="bg-charming-yellow-100 w-12 h-12 rounded-xl flex items-center justify-center mx-auto mb-3">
+                        <CheckCircle className="w-6 h-6 text-charming-yellow-600" />
                       </div>
                       <h5 className="font-semibold text-gray-900 mb-2">Account Under Review</h5>
                       <p className="text-gray-600 text-sm">Your account will be verified within 24-48 hours</p>
